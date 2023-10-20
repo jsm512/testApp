@@ -57,9 +57,11 @@ dependencies {
     /* mojo 추가한 부분 */
     // Firebase
     implementation 'androidx.activity:activity-ktx:1.2.0'
-    implementation 'com.google.firebase:firebase-auth:21.0.5'
+    //Authenticate using a custom authentication system : 21.0.5 -> 22.2.0 으로 변경
+    implementation 'com.google.firebase:firebase-auth:22.2.0'
     implementation ('com.google.firebase:firebase-analytics-ktx')
-    implementation ('com.google.firebase:firebase-auth-ktx')
+    ////Authenticate using a custom authentication system -> ktx -> 22.1.2로 변경
+//    implementation ('com.google.firebase:firebase-auth-ktx')
     implementation 'com.google.firebase:firebase-database-ktx'
     implementation 'com.google.firebase:firebase-database-ktx:20.3.0'
     implementation (platform('com.google.firebase:firebase-bom:32.3.1'))
